@@ -22,7 +22,7 @@ for modality, theta_file in zip(modality_names, in_thetas):
         prefix = prefix.replace('_ori.nii', '')
         print(f'Processing: {prefix}...')
         
-        cmd = f'python ~/harmonization/calamiti/code/decode_3d.py ' + \
+        cmd = f'python code/decode_3d.py ' + \
             f'--in-beta {os.path.join(in_dir, prefix)}_beta_axial.nii '+ \
             f'{os.path.join(in_dir, prefix)}_beta_coronal.nii ' + \
             f'{os.path.join(in_dir, prefix)}_beta_sagittal.nii ' + \

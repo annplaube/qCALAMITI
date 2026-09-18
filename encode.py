@@ -20,7 +20,7 @@ for modality in modality_names:
             continue
         print(f'{str(img_id+1)}/{str(num_imgs)} Processing: {prefix}')
 
-        cmd = 'python ~/harmonization/calamiti/code/encode_3d.py ' + \
+        cmd = 'python code/encode_3d.py ' + \
                 f'--in-img {img} ' + \
                 f'--out-dir {out_dir} ' + \
                 f'--pretrained-model {model_path} ' + \
